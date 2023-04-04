@@ -74,9 +74,6 @@ export class TransactionProcessorStack extends cdk.Stack {
         runtime: lambda.Runtime.NODEJS_16_X,
         handler: "dist/parse-csv-function.handler",
         code: parseCsvFunctionCode,
-        environment: {
-          DYNAMODB_TABLE_NAME: transactionsTable.tableName,
-        },
       }
     );
 
