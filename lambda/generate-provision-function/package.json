@@ -1,0 +1,16 @@
+{
+  "name": "generate-provision-function",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "package": "npm run build && zip -r lambda-package.zip dist node_modules"
+  },
+  "dependencies": {
+    "big.js": "^6.2.1"
+  },
+  "devDependencies": {
+    "@types/big.js": "^6.1.6",
+    "@types/node": "^16.11.15",
+    "typescript": "^4.5.4"
+  }
+}

@@ -1,0 +1,36 @@
+@startuml transaction-processor
+
+state "CsvParseTask::LambdaInvoke" as CsvParseTask
+
+[*] --> CsvParseTask : EventBridge S3 event
+CsvParseTask: Parse CSV coming from event bridge rule trigger
+CsvParseTask --> TransactionMap: parsed records
+
+note right of CsvParseTask
+  NodeJS Lambda 
+  that parse the S3 CSV
+end note
+
+state "TransactionMap::Map" as TransactionMap {
+  state "GenerateProvisionTask::LambdaInvoke" as GenerateProvisionTask
+  state "PersistTransactionTask::DynamoPutItem" as PersistTransactionTask
+  state "PersistProvisionTask::DynamoPutItem" as PersistProvisionTask
+  PersistTransactionTask: Persist transaction record in DymamoDB table
+  PersistProvisionTask: Persist provision record in DymamoDB table
+  GenerateProvisionTask: Generate record by amending amount by 20%
+  
+  [*] --> PersistTransactionTask : transaction record
+  PersistTransactionTask --> GenerateProvisionTask : transaction record
+  GenerateProvisionTask --> PersistProvisionTask : provision record
+
+  note right of GenerateProvisionTask
+  Simple NodeJS Lambda
+  that generate provision
+  record with new ID and
+  20% of original amount
+end note
+}
+
+TransactionMap --> [*]
+
+@enduml

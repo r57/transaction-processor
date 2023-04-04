@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="723px" preserveAspectRatio="none" style="width:650px;height:723px;background:#FFFFFF;" version="1.1" viewBox="0 0 650 723" width="650px" zoomAndPan="magnify"><defs/><g><g id="CsvParseTask"><rect fill="#F1F1F1" height="52.9766" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="352" x="100.5" y="103"/><line style="stroke:#181818;stroke-width:0.5;" x1="100.5" x2="452.5" y1="129.4883" y2="129.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="200" x="176.5" y="121.5352">CsvParseTask::LambdaInvoke</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="332" x="105.5" y="148.0234">Parse CSV coming from event bridge rule trigger</text></g><ellipse cx="276.5" cy="16" fill="#222222" rx="10" ry="10" style="stroke:none;stroke-width:1.0;"/><g id="elem_GMN7"><path d="M488,109 L488,125.5 L452.89,129.5 L488,133.5 L488,149.6211 A0,0 0 0 0 488,149.6211 L643,149.6211 A0,0 0 0 0 643,149.6211 L643,119 L633,109 L488,109 A0,0 0 0 0 488,109 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M633,109 L633,119 L643,119 L633,109 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="97" x="494" y="126.5684">NodeJS Lambda</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="134" x="494" y="141.8789">that parse the S3 CSV</text></g><ellipse cx="276.5" cy="707" fill="none" rx="10" ry="10" style="stroke:#222222;stroke-width:1.0;"/><ellipse cx="277" cy="707.5" fill="#222222" rx="6" ry="6" style="stroke:none;stroke-width:1.0;"/><path d="M19.5,233 L533,233 A12.5,12.5 0 0 1 545.5,245.5 L545.5,259.4883 L7,259.4883 L7,245.5 A12.5,12.5 0 0 1 19.5,233 " fill="#F1F1F1" style="stroke:#F1F1F1;stroke-width:1.0;"/><rect fill="none" height="403.4648" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="538.5" x="7" y="233"/><line style="stroke:#181818;stroke-width:0.5;" x1="7" x2="545.5" y1="259.4883" y2="259.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147" x="202.75" y="251.5352">TransactionMap::Map</text><g id="TransactionMap.GenerateProvisionTask"><rect fill="#F1F1F1" height="52.9766" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="332" x="19" y="458.4883"/><line style="stroke:#181818;stroke-width:0.5;" x1="19" x2="351" y1="484.9766" y2="484.9766"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="264" x="53" y="477.0234">GenerateProvisionTask::LambdaInvoke</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="312" x="24" y="503.5117">Generate record by amending amount by 20%</text></g><g id="TransactionMap.PersistTransactionTask"><rect fill="#F1F1F1" height="52.9766" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="332" x="19" y="343.4883"/><line style="stroke:#181818;stroke-width:0.5;" x1="19" x2="351" y1="369.9766" y2="369.9766"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="274" x="48" y="362.0234">PersistTransactionTask::DynamoPutItem</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="312" x="24" y="388.5117">Persist transaction record in DymamoDB table</text></g><g id="TransactionMap.PersistProvisionTask"><rect fill="#F1F1F1" height="52.9766" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="319" x="25.5" y="573.4883"/><line style="stroke:#181818;stroke-width:0.5;" x1="25.5" x2="344.5" y1="599.9766" y2="599.9766"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="256" x="57" y="592.0234">PersistProvisionTask::DynamoPutItem</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="299" x="30.5" y="618.5117">Persist provision record in DymamoDB table</text></g><ellipse cx="185" cy="280.4883" fill="#222222" rx="10" ry="10" style="stroke:none;stroke-width:1.0;"/><g id="elem_GMN17"><path d="M369.5,449.4883 L369.5,480.9883 L351.45,484.9883 L369.5,488.9883 L369.5,520.7305 A0,0 0 0 0 369.5,520.7305 L536.5,520.7305 A0,0 0 0 0 536.5,520.7305 L536.5,459.4883 L526.5,449.4883 L369.5,449.4883 A0,0 0 0 0 369.5,449.4883 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M526.5,449.4883 L526.5,459.4883 L536.5,459.4883 L526.5,449.4883 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="143" x="375.5" y="467.0566">Simple NodeJS Lambda</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="146" x="375.5" y="482.3672">that generate provision</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="145" x="375.5" y="497.6777">record with new ID and</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="146" x="375.5" y="512.9883">20% of original amount</text></g><!--MD5=[274485205eb36a1969d36c4db43af25b]
+link *start*TransactionMap to PersistTransactionTask--><g id="link_*start*TransactionMap_PersistTransactionTask"><path d="M185,290.8483 C185,301.8483 185,320.6683 185,337.0783 " fill="none" id="*start*TransactionMap-to-PersistTransactionTask" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="185,341.9983,189,332.9983,185,336.9983,181,332.9983,185,341.9983" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="115" x="186" y="322.0566">transaction record</text></g><!--MD5=[a05fe04d7f03f5c2c165918e98e8d739]
+link PersistTransactionTask to GenerateProvisionTask--><g id="link_PersistTransactionTask_GenerateProvisionTask"><path d="M185,396.9083 C185,413.4183 185,434.9183 185,452.4183 " fill="none" id="PersistTransactionTask-to-GenerateProvisionTask" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="185,457.1883,189,448.1883,185,452.1883,181,448.1883,185,457.1883" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="115" x="186" y="428.0566">transaction record</text></g><!--MD5=[acf31a8cd9454dca95cb2461381c7fae]
+link GenerateProvisionTask to PersistProvisionTask--><g id="link_GenerateProvisionTask_PersistProvisionTask"><path d="M185,511.9083 C185,528.4183 185,549.9183 185,567.4183 " fill="none" id="GenerateProvisionTask-to-PersistProvisionTask" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="185,572.1883,189,563.1883,185,567.1883,181,563.1883,185,572.1883" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="103" x="186" y="552.0566">provision record</text></g><!--MD5=[ae2c7c83e36c65373f25a001feba5abd]
+link *start to CsvParseTask--><g id="link_*start_CsvParseTask"><path d="M276.5,26.12 C276.5,41.37 276.5,72.72 276.5,96.74 " fill="none" id="*start-to-CsvParseTask" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="276.5,101.67,280.5,92.67,276.5,96.67,272.5,92.67,276.5,101.67" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="130" x="277.5" y="69.5684">EventBridge S3 event</text></g><!--MD5=[076ed8becf8b162f458ff6c39071c337]
+link CsvParseTask to TransactionMap--><g id="link_CsvParseTask_TransactionMap"><path d="M276.5,156.33 C276.5,173.84 276.5,198.79 276.5,226.64 " fill="none" id="CsvParseTask-to-TransactionMap" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="276.5,231.63,280.5,222.63,276.5,226.63,272.5,222.63,276.5,231.63" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="277.5" y="199.5684">parsed records</text></g><!--MD5=[a2f94b6258678dc4324ee8bc650caccb]
+link TransactionMap to *end--><g id="link_TransactionMap_*end"><path d="M276.5,636.34 C276.5,658.87 276.5,678.19 276.5,690.73 " fill="none" id="TransactionMap-to-*end" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="276.5,695.65,280.5,686.65,276.5,690.65,272.5,686.65,276.5,695.65" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[971013a36a752dd925a524f77339d2f5]
+@startuml transaction-processor
+
+state "CsvParseTask::LambdaInvoke" as CsvParseTask
+
+[*] - -> CsvParseTask : EventBridge S3 event
+CsvParseTask: Parse CSV coming from event bridge rule trigger
+CsvParseTask - -> TransactionMap: parsed records
+
+note right of CsvParseTask
+  NodeJS Lambda 
+  that parse the S3 CSV
+end note
+
+state "TransactionMap::Map" as TransactionMap {
+  state "GenerateProvisionTask::LambdaInvoke" as GenerateProvisionTask
+  state "PersistTransactionTask::DynamoPutItem" as PersistTransactionTask
+  state "PersistProvisionTask::DynamoPutItem" as PersistProvisionTask
+  PersistTransactionTask: Persist transaction record in DymamoDB table
+  PersistProvisionTask: Persist provision record in DymamoDB table
+  GenerateProvisionTask: Generate record by amending amount by 20%
+  
+  [*] - -> PersistTransactionTask : transaction record
+  PersistTransactionTask - -> GenerateProvisionTask : transaction record
+  GenerateProvisionTask - -> PersistProvisionTask : provision record
+
+  note right of GenerateProvisionTask
+  Simple NodeJS Lambda
+  that generate provision
+  record with new ID and
+  20% of original amount
+end note
+}
+
+TransactionMap - -> [*]
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: CZ
+--></g></svg>
