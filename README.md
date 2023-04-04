@@ -5,7 +5,7 @@ An AWS CDK exercise.
 1. watch for CSVs with landing on S3 bucket
 2. parse the CSV using Lambda function
 3. persist each transaction into DynamoDB
-4. generate new transaction record by amending amount of every transaction by 20%
+4. generate new transaction record by amending amount of every transaction by configurable amount
 5. persist provision transaction into DynamoDB as well
 
 ## AWS infrastructure deployed
