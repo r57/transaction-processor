@@ -47,19 +47,28 @@ Optional deploy-time ENV vars:
 # Try it out
 
 Find & store S3 bucket deployed by stack:
-`export BUCKET_NAME=$(aws cloudformation describe-stack-resources --stack-name TransactionProcessorStack --output json | jq -r '.StackResources[] | select(.ResourceType=="AWS::S3::Bucket") | .PhysicalResourceId')`
+```bash
+export BUCKET_NAME=$(aws cloudformation describe-stack-resources --stack-name TransactionProcessorStack --output json | jq -r '.StackResources[] | select(.ResourceType=="AWS::S3::Bucket") | .PhysicalResourceId')
+```
 
 Find & store DynamoDB table deployed by stack:
-`export DYNAMO_TABLE_NAME=$(aws cloudformation describe-stack-resources --stack-name TransactionProcessorStack --output json | jq -r '.StackResources[] | select(.ResourceType=="AWS::DynamoDB::Table") | .PhysicalResourceId')`
+```bash
+export DYNAMO_TABLE_NAME=$(aws cloudformation describe-stack-resources --stack-name TransactionProcessorStack --output json | jq -r '.StackResources[] | select(.ResourceType=="AWS::DynamoDB::Table") | .PhysicalResourceId')
+```
 
 Upload sample transaction file:
-`aws s3 cp ./transactions_sample.csv "s3://$BUCKET_NAME/transactions/"`
+```bash
+aws s3 cp ./transactions_sample.csv "s3://$BUCKET_NAME/transactions/"
+```
 
 List DynamoDB table:
-`aws dynamodb scan --table-name "$DYNAMO_TABLE_NAME"`
+```bash
+aws dynamodb scan --table-name "$DYNAMO_TABLE_NAME"
+```
 
 # Amendments / limitations
 
 - Lambda for CSV parsing might be insufficient due to limited memory and runtime. Bigger files would work better with Distributed Map stage. 
 - Same goes for Step Functions state size. Currently transactions are passed to Map as part of the state. With larger files this can hit the State Functions state size limit. Could be solved by distributed Map as well.
 - Stack implementation does not allow for use of existing S3 bucket. 
+- Missing tests 🙉
